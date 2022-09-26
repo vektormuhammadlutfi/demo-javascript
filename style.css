@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI',sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #222;
+}
+
+.align-items-center{
+    align-items: center!important;
+    margin-top: 300px;
+}
+
+.text-center{
+    text-align: center!important;
+}
+
+.form-input{
+    height: 27px;
+    border-radius: 15px;
+    border: none;
+    margin-right: 20px;
+    width: 320px;
+    padding: 12px;
+}
+
+.main {
+    background: #fff;
+}
+
+.btn {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1;
+    text-align: center;
+    padding: 14px 30px;
+    border: 0 none;
+    border-radius: 100px;
+    outline: 0 none;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    margin-top: 1400px;
+}
+
+.btn.btn-bordered {
+    background: transparent none repeat scroll 0 0;
+    color: #444;
+}
+
+.btn.btn-bordered-white {
+    background: transparent none repeat scroll 0 0;
+    border: 2px solid #fff;
+}
+
+.bg-page {
+    height: 100%;
+    overflow: hidden;
+}
+
+.bg-page {
+    background: rgba(0, 0, 0, 0) url("img/bg.png") repeat-x fixed left top / cover;
+}
+
+.stars {
+    background: rgba(0, 0, 0, 0) url("img/stars.svg") repeat fixed left top / contain;
+}
+
+.rocket-1 {
+    position: absolute;
+    top: 75%;
+    width: 40px;
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    pointer-events: none;
+    -webkit-animation: rocket-movement 200s linear infinite both running;
+    animation: rocket-movement 200s linear infinite both running;
+    z-index: 95;
+}
+
+.earth-2 {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 100px;
+    z-index: 90;
+}
+
+.moon-3 {
+    position: absolute;
+    top: 12%;
+    left: 25%;
+    width: 80px;
+}
+
+.astronaut-4 {
+    width: 140px;
+    -webkit-animation: rotate-astronaut 200s infinite linear both alternate;
+    animation: rotate-astronaut 200s infinite linear both alternate;
+}
+
+.astronaut {
+    position: absolute;
+    top: 60%;
+    right: 20%;
+    will-change: transform;
+    -webkit-animation: move-astronaut 50s infinite linear both alternate;
+    animation: move-astronaut 50s infinite linear both alternate;
+    z-index: 110 !important;
+}
+
+.glowing-stars .star {
+    position: absolute;
+    height: 3px;
+    width: 3px;
+    background-color: #fff;
+    border-radius: 100%;
+    opacity: 0.3;
+    will-change: opacity;
+}
+
+.glowing-stars .star:nth-child(1) {
+    top: 80%;
+    left: 25%;
+    -webkit-animation: glow-star 2s infinite ease-in-out alternate 1s;
+    animation: glow-star 2s infinite ease-in-out alternate 1s;
+}
+
+.glowing-stars .star:nth-child(2) {
+    top: 20%;
+    left: 40%;
+    -webkit-animation: glow-star 2s infinite ease-in-out alternate 3s;
+    animation: glow-star 2s infinite ease-in-out alternate 3s;
+}
+
+.glowing-stars .star:nth-child(3) {
+    top: 25%;
+    left: 25%;
+    -webkit-animation: glow-star 2s infinite ease-in-out alternate 5s;
+    animation: glow-star 2s infinite ease-in-out alternate 5s;
+}
+
+.glowing-stars .star:nth-child(4) {
+    top: 75%;
+    left: 80%;
+    -webkit-animation: glow-star 2s infinite ease-in-out alternate 7s;
+    animation: glow-star 2s infinite ease-in-out alternate 7s;
+}
+
+.glowing-stars .star:nth-child(5) {
+    top: 90%;
+    left: 50%;
+    -webkit-animation: glow-star 2s infinite ease-in-out alternate 9s;
+    animation: glow-star 2s infinite ease-in-out alternate 9s;
+}
+
+@-webkit-keyframes rocket-movement {
+    100% {
+        -webkit-transform: translate(1200px, -600px);
+        transform: translate(1200px, -600px);
+    }
+}
+
+@keyframes rocket-movement {
+    100% {
+        -webkit-transform: translate(1200px, -600px);
+        transform: translate(1200px, -600px);
+    }
+}
+
+@-webkit-keyframes move-astronaut {
+    100% {
+        -webkit-transform: translate(-160px, -160px);
+        transform: translate(-160px, -160px);
+    }
+}
+
+@keyframes move-astronaut {
+    100% {
+        -webkit-transform: translate(-160px, -160px);
+        transform: translate(-160px, -160px);
+    }
+}
+
+@-webkit-keyframes glow-star {
+    40% {
+        -webkit-opacity: 0.3;
+        opacity: 0.3;
+    }
+
+    90%,
+    100% {
+        -webkit-opacity: 1;
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        border-radius: 999999px;
+    }
+}
+
+@keyframes glow-star {
+    40% {
+        -webkit-opacity: 0.3;
+        opacity: 0.3;
+    }
+
+    90%,
+    100% {
+        -webkit-opacity: 1;
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        border-radius: 999999px;
+    }
+}
